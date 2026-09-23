@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:wash_car/wash_app.dart';
+import 'package:wash/core/di/service_locaor.dart';
+import 'package:wash/wash_app.dart';
 
-void main() {
-  runApp(WashApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await configureDependencies();
+  runApp(const WashApp());
 }
