@@ -1,17 +1,79 @@
-# wash_car
+# 🚗 Wash Car
 
-A new Flutter project.
+A Flutter mobile application for booking and managing car washing services.
 
-## Getting Started
+Wash Car provides users with a simple and convenient experience to register,
+access the application, and interact with car washing services through a
+clean and modern interface.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 📱 Project Overview
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+**Wash Car** is built using Flutter and follows a feature-based project
+structure to keep the application organized, scalable, and maintainable.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The project separates core application functionality from individual
+features, while using Cubit for state management.
+
+---
+
+## ✨ Features
+
+### 🔐 Authentication
+- User Registration
+- Form Validation
+- Authentication Flow
+
+### 🚗 Car Washing Services
+- Car washing service management
+- Service-related user interactions
+
+### 🎨 User Interface
+- Clean and modern UI
+- Responsive layouts
+- Reusable components
+- Consistent application theme
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Usage |
+|------------|-------|
+| Flutter | Mobile Application Development |
+| Dart | Programming Language |
+| Cubit | State Management |
+| REST API | Backend Communication |
+| Dependency Injection | Dependency Management |
+| Git | Version Control |
+
+---
+
+## 🏗️ Project Architecture
+
+The project follows a **Feature-Based Architecture** with separation
+between core application components and individual features.
+
+```text
+lib/
+│
+├── core/
+│   ├── di/
+│   ├── networking/
+│   ├── routes/
+│   ├── theme/
+│   └── utils/
+│
+├── feature/
+│   └── register/
+│       ├── data/
+│       │   ├── models/
+│       │   └── repo/
+│       │
+│       └── presentation/
+│           ├── cubit/
+│           └── ui/
+│
+├── main.dart
+└── wash_app.dart
